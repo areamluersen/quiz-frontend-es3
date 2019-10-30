@@ -38,8 +38,8 @@
 .product-list article a:hover {
     background: #da552f;
     color: #FFF;
-
 }
+
 .product-list .actions {
     display: flex;
     justify-content: space-between;

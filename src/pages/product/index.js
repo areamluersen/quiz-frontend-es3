@@ -1,5 +1,6 @@
 import React,  { Component } from 'react';
 import api from '../../services/api';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export default class Procuct extends Component {
@@ -23,7 +24,8 @@ export default class Procuct extends Component {
                 <h1>{product.title}</h1>
                 <p>{product.description}</p>
 
-                <p>URL: <a href={product.url}>{product.url}</a>></p>
+                <p>URL: <a href={product.url}>{product.url}</a></p>
+                <Link to={"/"} >Voltar</Link>
             </div>
         )
     }
