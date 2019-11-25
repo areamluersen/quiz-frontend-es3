@@ -15,8 +15,7 @@ import ImportarUsuarios from './pages/importarUsuarios';
 const Routes = () => (
     <BrowserRouter>
         <Switch>
-            <Route redirect exact path="/" component={Main} />
-            <Route redirect exact path="/login" component={Login} />
+            <Route redirect exact path="/" component={Login} />
             <Route path="/inicio" component={Inicio} />
             <Route path="/jogar" component={Jogar} />
             <Route path="/consultarDesempenho" component={DesempenhoAluno} />

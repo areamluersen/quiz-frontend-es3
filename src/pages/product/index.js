@@ -20,7 +20,11 @@ export default class Procuct extends Component {
         const { product } = this.state;
 
         return (
-            <div className='product-info'>
+            <div className='product-info'
+                 style={{
+
+                 }}
+            >
                 <h1>{product.title}</h1>
                 <p>{product.description}</p>
 
