@@ -3,7 +3,7 @@ import api from '../../services/api';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-export default class Procuct extends Component {
+export default class Product extends Component {
     state = {
         product: {},
     };
