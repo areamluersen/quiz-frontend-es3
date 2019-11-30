@@ -7,7 +7,7 @@
 
 @media only screen and (min-width: 600px) {
     .header {
-        height: 175px;
-        padding: 60px;
+        height: 115px;
+        padding: 30px 60px;
     }
 }

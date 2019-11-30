@@ -297,9 +297,20 @@ export default class DesempenhoAluno extends Component {
                         <div
                             style={{
                                 display: 'flex',
-                                justifyContent: 'flex-end',
+                                justifyContent: "space-between",
+                                marginTop: 30,
                             }}
                         >
+                            <Link to={"/inicio"}
+                                style={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    color: '#A8A8A8',
+                                    textDecoration: 'none',
+                                    fontSize: 16,
+                                    padding: 16,
+                                }}
+                            >Voltar</Link>
                             <button type="submit"
                                     style={{
                                         width: '30%',
@@ -307,18 +318,17 @@ export default class DesempenhoAluno extends Component {
                                         backgroundColor: '#150C9D',
                                         border: 0,
                                         cursor: 'pointer',
-                                        marginTop: 30,
                                     }}
                             >
                                 <Link to={"/inicio"}
-                                      style={{
-                                          display: 'flex',
-                                          justifyContent: 'center',
-                                          color: '#FFFFFF',
-                                          textDecoration: 'none',
-                                          fontSize: 16,
-                                          padding: 16,
-                                      }}
+                                    style={{
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        color: '#FFFFFF',
+                                        textDecoration: 'none',
+                                        fontSize: 16,
+                                        padding: 16,
+                                    }}
                                 >Imprimir</Link>
                             </button>
                         </div>

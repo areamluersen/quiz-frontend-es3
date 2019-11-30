@@ -1,4 +1,4 @@
-import React,  { Component } from 'react';
+import React, { Component } from 'react';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
 
@@ -121,44 +121,34 @@ export default class CadastroPerguntas extends Component {
                         marginTop: 10,
                     }}
                 >
-                    <button type="submit"
+                    <Link to={"/inicio"}
                             style={{
-                                width: '34%',
-                                borderRadius: 4,
-                                backgroundColor: '#A8A8A8',
-                                border: 0,
-                                cursor: 'pointer',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                color: '#A8A8A8',
+                                textDecoration: 'none',
+                                fontSize: 16,
+                                padding: 16,
                             }}
-                    >
-                        <Link to={"/inicio"}
-                              style={{
-                                  display: 'flex',
-                                  justifyContent: 'center',
-                                  color: '#FFFFFF',
-                                  textDecoration: 'none',
-                                  fontSize: 16,
-                                  padding: 16,
-                              }}
                         >Voltar</Link>
-                    </button>
                     <button type="submit"
-                            style={{
-                                width: '34%',
-                                borderRadius: 4,
-                                backgroundColor: '#150C9D',
-                                border: 0,
-                                cursor: 'pointer',
-                            }}
+                        style={{
+                            width: '34%',
+                            borderRadius: 4,
+                            backgroundColor: '#150C9D',
+                            border: 0,
+                            cursor: 'pointer',
+                        }}
                     >
                         <Link to={"/inicio"}
-                              style={{
-                                  display: 'flex',
-                                  justifyContent: 'center',
-                                  color: '#FFFFFF',
-                                  textDecoration: 'none',
-                                  fontSize: 16,
-                                  padding: 16,
-                              }}
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                color: '#FFFFFF',
+                                textDecoration: 'none',
+                                fontSize: 16,
+                                padding: 16,
+                            }}
                         >Cadastrar</Link>
                     </button>
                 </div>
