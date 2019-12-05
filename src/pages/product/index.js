@@ -3,7 +3,7 @@ import api from '../../services/api';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-export default class Procuct extends Component {
+export default class Product extends Component {
     state = {
         product: {},
     };
@@ -20,7 +20,11 @@ export default class Procuct extends Component {
         const { product } = this.state;
 
         return (
-            <div className='product-info'>
+            <div className='product-info'
+                 style={{
+
+                 }}
+            >
                 <h1>{product.title}</h1>
                 <p>{product.description}</p>
 

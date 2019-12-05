@@ -1,0 +1,17 @@
+.desempenho {
+    display: block;
+}
+
+.espacodireita {
+    padding-right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .desempenho {
+        display: flex;
+    }
+    .espacodireita {
+        padding-right: 60px;
+    }
+}
+

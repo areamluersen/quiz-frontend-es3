@@ -1,19 +1,28 @@
 import React,  { Component } from 'react';
-import api from '../../services/api';
-import { Link } from 'react-router-dom';
-import '../styles.css';
+import Jogo from './Game'
+import {questionsArray, questions} from './questions';
 
-export default class Procuct extends Component {
+export default class Game extends Component {
+    constructor(){
+        super();
+        this.state={
+            countQuestion: 0,
+            question: questionsArray[0]
+        }
+    }
+
+    nextQuestion(){
+        const count = this.state.countQuestion+1;
+        this.setState({question: questionsArray[count], countQuestion: count})
+    }
 
     render() {
+        const data = this.state.question;
+        console.log('questions.length:', questionsArray.length);
+        console.log('this.state.countQuestion', this.state.countQuestion)
 
         return (
-            <div className='product-info'>
-                <h1>Jogar</h1>
-                <p>Tela do Jogo -> Implementar</p>
-
-                <Link to={"/inicio"} >Voltar ao início</Link>
-            </div>
+            <Jogo data={data} nextQuestion={() => this.nextQuestion()} endQuestion={questionsArray.length === this.state.countQuestion+1}/>
         )
     }
 }
